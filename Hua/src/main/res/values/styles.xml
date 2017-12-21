@@ -1,0 +1,72 @@
+<resources>
+
+    <!--自定义toolbar样式-->
+    <style name="ClubToolbar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="toolbarStyle">@style/ClubToolbar</item>
+    </style>
+
+    <!--白天模式主题-->
+    <style name="AppTheme.Light" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/colorTheme</item>
+        <item name="colorPrimaryDark">@color/colorTheme</item>
+        <item name="colorAccent">@color/colorTheme</item>
+        <!--主题色-->
+        <item name="huaColorTheme">@color/colorTheme</item>
+        <!--纯黑白色-->
+        <item name="huaColorWhiteAndBlack">@color/colorWhite</item>
+        <!--文本的颜色-->
+        <item name="huaTextColor">@color/colorContent</item>
+        <!--稍暗文本的颜色-->
+        <item name="huaTextColor2">@color/colorContent2</item>
+        <!--背景的颜色-->
+        <item name="huaBagColor">@color/colorPageBg</item>
+        <!--稍暗背景的颜色-->
+        <item name="huaBagColor2">@color/colorPageBg2</item>
+        <!--分割线-->
+        <item name="huaColorDivider">@color/colorDivider</item>
+        <!--红与白的切换-->
+        <item name="huaRedAndWhite">@color/colorTheme</item>
+        <!--黑与暗白的切换-->
+        <item name="huaBlackAndBlack2">@color/colorContent</item>
+    </style>
+
+    <!--夜间模式主题-->
+    <style name="AppTheme.Night" parent="Base.AppTheme">
+        <item name="android:textColor">@color/colorContent</item>
+    </style>
+
+    <!--titleBar样式，Toolbar中调用此样式，可使水波纹效果是白色的，因不知原理，故不使用-->
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionBarItemBackground">@drawable/toolbarItemBackground</item>
+        <item name="selectableItemBackground">@drawable/toolbarItemBackground</item>
+        <item name="titleTextAppearance">@style/ToolBar.Title</item>
+        <item name="subtitleTextAppearance">@style/Toolbar.SubTitle</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:textSize">18sp</item> &lt;!&ndash;  搞掂字体大小&ndash;&gt;-->
+    </style>
+
+    <!--titlebar 标题-->
+    <style name="ToolBar.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!--titlebar 副标题-->
+    <style name="Toolbar.SubTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">9.0sp</item>
+        <item name="android:textColor">#99ffffff</item>
+    </style>
+
+    <!--<style name="AppThemeSystem" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    
+</resources>

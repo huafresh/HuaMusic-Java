@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/huaBagColor">
+
+        <TextView
+            android:id="@+id/no_downing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/down_no_downing"
+            android:textColor="?attr/huaTextColor2"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/downing_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                layout="@layout/fragment_down_downing_title"/>
+
+            <ListView
+                android:id="@+id/downing_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

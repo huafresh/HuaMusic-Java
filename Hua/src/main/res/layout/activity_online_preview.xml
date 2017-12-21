@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/huaBagColor"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/preview_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/scroll_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/huaBagColor"/>
+<!--如果这里没有内容，则底部布局在没有加载完fragment时位置显示不对-->
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/preview_playBar_contain"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</layout>

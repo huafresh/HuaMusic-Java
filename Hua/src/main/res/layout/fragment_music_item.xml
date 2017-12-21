@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_view_height"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/music_local_image"
+        android:layout_width="@dimen/list_view_height"
+        android:layout_height="match_parent"
+        android:src="@drawable/music_local"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/music_local_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music_local"
+                android:textSize="@dimen/text_size_middle"
+                android:textColor="?attr/huaTextColor"/>
+            <TextView
+                android:id="@+id/music_local_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music_sum_default"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginLeft="3dp"
+                android:textColor="?attr/huaTextColor2"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/setting_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="?attr/huaColorDivider"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

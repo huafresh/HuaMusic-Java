@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/huaBagColor">
+        <TextView
+            android:id="@+id/no_recently"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/music_no_history"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="?attr/huaTextColor2"
+            android:gravity="center_horizontal"
+            android:paddingTop="25dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/recently_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/recently_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="?attr/huaBagColor"/>
+
+            <LinearLayout
+                android:id="@+id/recently_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:orientation="vertical"
+                android:background="?attr/huaColorTheme"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

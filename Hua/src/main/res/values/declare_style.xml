@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="huaColorTheme" format="color"/>
+    <attr name="huaColorWhiteAndBlack" format="color"/>
+    <attr name="huaBagColor" format="color"/>
+    <attr name="huaBagColor2" format="color"/>
+    <attr name="huaTextColor" format="color"/>
+    <attr name="huaTextColor2" format="color"/>
+    <attr name="huaColorDivider" format="color"/>
+    <attr name="huaRedAndWhite" format="color"/>
+    <attr name="huaBlackAndBlack2" format="color"/>
+    <attr name="huaWhiteAndWhite2" format="color"/>
+    <attr name="huaWhiteAndThemeBlack" format="color"/>
+    <attr name="huaBlackAndThemeBlack" format="color"/>
+    <attr name="huaItemPress" format="reference"/>
+    <attr name="huaToolBarPopupTheme" format="reference"/>
+    <attr name="huaJokeItemBg" format="reference"/>
+</resources>

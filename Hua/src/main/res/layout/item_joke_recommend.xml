@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/huaWhiteAndThemeBlack"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="?attr/huaJokeItemBg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/default_new_logo"/>
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_middle"
+                    android:textColor="?attr/huaTextColor2"
+                    android:layout_marginLeft="7dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/user_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_middle"
+                android:textColor="?attr/huaTextColor"
+                android:layout_marginTop="7dp"/>
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_small3"
+                android:textColor="@color/second_progress"
+                android:background="@drawable/joke_from"
+                android:layout_marginTop="7dp"/>
+
+            <RelativeLayout
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true">
+                <!--其实这个没用的，放在这解决了第一次播放屏幕会闪的问题。不解-->
+                <!--<io.vov.vitamio.widget.VideoView-->
+                    <!--android:id="@+id/video_view"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:visibility="invisible"/>-->
+                <ImageView
+                    android:id="@+id/video_bag_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/default_new_logo"/>
+                <ImageView
+                    android:id="@+id/video_btn_play"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/video_play"
+                    android:layout_centerInParent="true" />
+                <ImageView
+                    android:id="@+id/video_btn_pause"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/btn_video_pause"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

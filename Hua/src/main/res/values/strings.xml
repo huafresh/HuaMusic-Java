@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">华创</string>
+    <!--侧滑菜单-->
+    <string name="default_nick_name">未设置昵称</string>
+    <string name="default_level">lv.0</string>
+    <string name="nav_menu_home">项目主页</string>
+    <string name="nav_menu_down">扫码下载</string>
+    <string name="nav_menu_back">问题反馈</string>
+    <string name="nav_menu_about">关于华创音乐</string>
+    <string name="nav_menu_night">夜间模式</string>
+    <string name="nav_menu_time">定时停止播放</string>
+    <string name="setting">设置</string>
+    <string name="exit">退出应用</string>
+    <string name="night_model">夜间模式</string>
+    <string name="day_model">日间模式</string>
+    <string name="time_exit">定时停止播放</string>
+    <string name="time_exit_notice">计时结束后播放完当前歌曲再停止</string>
+    <string name="scan">使用微信或者qq扫描以上二维码，即可下载华创音乐客户端。赶快与你的朋友分享吧-_-</string>
+    <!--加载界面-->
+    <string name="loading_notice">努力加载中…</string>
+    <string name="load_error_notice">加载失败,点击重试</string>
+    <string name="alert_notice">切换中，请稍候…</string>
+    <!--音乐模块界面-->
+    <string name="music_local">本地音乐</string>
+    <string name="music_recently">最近播放</string>
+    <string name="music_down">下载管理</string>
+    <string name="music_online">在线音乐</string>
+    <string name="music_song_menu">创建的歌单</string>
+    <string name="music_song_menu_default">我喜欢的音乐</string>
+    <string name="music_sum_default">(0)</string>
+    <string name="music_sum_default2">0首</string>
+    <string name="music_item_next">+</string>
+    <string name="music_no_history">暂无播放记录</string>
+    <string name="music_no_local">暂无本地音乐，点击刷新</string>
+    <string name="music_no_down">暂无下载记录</string>
+    <string name="toolbar_title_default">加载中…</string>
+    <!--菜单项-->
+    <string name="menu_search">搜索</string>
+    <string name="more_scan">扫描本地音乐</string>
+    <string name="more_order1">选择排序方式</string>
+    <string name="more_clear">清空</string>
+    <string name="more_order2">排序</string>
+    <!--显示歌曲详细信息-->
+    <string name="detail_author">艺术家: </string>
+    <string name="detail_album">专辑: </string>
+    <string name="detail_duration">播放时长: </string>
+    <string name="detail_file_name">文件名称: </string>
+    <string name="detail_size">文件大小: </string>
+    <string name="detail_path">文件路径: </string>
+    <!--下载界面-->
+    <string name="down_no_downing">暂无歌曲正在下载</string>
+    <string name="down_no_down">暂无歌曲下载记录</string>
+    <string name="down_start_all">全部开始</string>
+    <string name="down_pause_all">全部暂停</string>
+    <string name="down_clear">清空</string>
+    <string name="down_wait_downing">等待开始下载</string>
+    <string name="down_pause">已暂停，点击继续下载</string>
+    <!--榜单-->
+    <string name="title_main">主打榜单</string>
+    <string name="title_type">分类榜单</string>
+    <!--关于-->
+    <string name="about_title">关于华创音乐</string>
+    <string name="about_version">当前版本 V1.0</string>
+    <string name="about_update">新版更新</string>
+    <string name="about_history">更新日志</string>
+    <string name="about_star">评个分吧</string>
+    <string name="about_description">感谢您的使用，如果满意给个start吧。本项目模仿网易云音乐界面，仅供学习使用，如有侵权，请通知我删除或者修改。</string>
+    <string name="about_terms1">网易云音乐服务条款</string>
+    <string name="about_terms2">关于网易</string>
+
+    <!--设置-->
+    <string name="setting_play">使用2G/3G/4G网络播放</string>
+    <string name="setting_down">使用2G/3G/4G网络下载</string>
+
+    <!--项目主页-->
+    <string name="home_introduce">项目介绍</string>
+    <string name="home_description">
+        华创音乐界面模仿网易云音乐，共分为三大模块：新闻、音乐、搞笑视频。\n\n
+        新闻数据使用jsoup工具爬取腾讯新闻网的内容http://news.qq.com。\n\n
+        音乐中在线音乐部分使用百度音乐api。\n\n
+        搞笑视频内容使用内涵段子的api，参考\nhttps://github.com/jokermonn/-Api/blob/master/Neihan.md。\n\n
+        以上内容如构成侵权，请及时通知我修改或者删除。
+
+    </string>
+    <string name="home_contract">联系我</string>
+    <string name="home_email">Email：2587168099@qq.com\nqq: 2587168099</string>
+    <string name="home_update">更新内容</string>
+    <string name="home_v1.0">暂时没有内容</string>
+    <string name="home_library">开源库</string>
+    <string name="home_lib_content">
+         \'jp.wasabeef:glide-transformations:2.0.1\'\n
+         \'com.squareup.okio:okio:1.5.0\'\n
+         \'com.squareup.okhttp:okhttp:2.4.0\'\n
+         \'com.squareup.retrofit2:converter-gson:2.0.2\'\n
+         \'org.jsoup:jsoup:1.10.2\'\n
+         \'net.sourceforge.htmlcleaner:htmlcleaner:2.16\'\n
+         files(\'libs/osbcp-css-parser-1.4.jar\')\n
+         project(\':vitamio\')\n
+         files(\'libs/zxing-javase-3.2.0.jar\')\n
+         files(\'libs/zxing-core-3.2.0.jar\')
+    </string>
+</resources>

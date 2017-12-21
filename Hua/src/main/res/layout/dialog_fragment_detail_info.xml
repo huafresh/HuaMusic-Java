@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="15dp"
+    android:background="?attr/huaWhiteAndThemeBlack">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp">
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="网络歌手-风云雄霸天下插曲"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_big"
+            android:textColor="?attr/huaTextColor"/>
+        <TextView
+            android:id="@+id/tv_detail_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="艺术家 : 未知"
+            android:layout_marginTop="@dimen/text_text_distance"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="?attr/huaTextColor"/>
+        <TextView
+            android:id="@+id/tv_detail_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="专辑 : "
+            android:layout_marginTop="@dimen/text_text_distance"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="?attr/huaTextColor"/>
+        <TextView
+            android:id="@+id/tv_detail_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="播放时长 : "
+            android:layout_marginTop="@dimen/text_text_distance"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="?attr/huaTextColor"/>
+        <TextView
+            android:id="@+id/tv_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文件名称 : "
+            android:layout_marginTop="@dimen/text_text_distance"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="?attr/huaTextColor"/>
+        <TextView
+            android:id="@+id/tv_detail_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文件大小 : "
+            android:layout_marginTop="@dimen/text_text_distance"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="?attr/huaTextColor"/>
+        <TextView
+            android:id="@+id/tv_detail_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文件路径 :"
+            android:layout_marginTop="@dimen/text_text_distance"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="?attr/huaTextColor"/>
+    </LinearLayout>
+</LinearLayout>

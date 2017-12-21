@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:background="?attr/huaBagColor">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_exit"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="?attr/huaTextColor"
+            android:paddingLeft="@dimen/timer_padding"
+            android:paddingRight="@dimen/timer_padding"/>
+        <ListView
+            android:id="@+id/lv_time_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/colorWhite"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="?attr/huaColorDivider" />
+            <LinearLayout
+                android:id="@+id/checkbox_contain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="?attr/huaItemPress">
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_exit_notice"
+                    android:textColor="?attr/huaTextColor"
+                    android:textSize="@dimen/text_size_small4"
+                    android:layout_marginLeft="12dp"
+                    android:clickable="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

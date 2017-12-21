@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/range_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?attr/huaBagColor"/>
+
+        <include
+            android:id="@+id/menu_title"
+            layout="@layout/include_song_menu_title"
+            android:visibility="invisible"/>
+
+        <ListView
+            android:id="@+id/menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="?attr/huaBagColor"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_clear" type="id"/>
+    <item name="menu_order" type="id"/>
+    <item name="menu_search" type="id"/>
+
+    <item name="view_europe" type="id"/>
+    <item name="view_net" type="id"/>
+    <item name="view_old" type="id"/>
+    <item name="view_rock" type="id"/>
+</resources>

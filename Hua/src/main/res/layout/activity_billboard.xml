@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/huaBagColor">
+        <LinearLayout
+            android:id="@+id/board_list_contain"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <!--用下面的view消除加载时有一瞬间底部布局不在底部-->
+            <View
+                android:id="@+id/view_tmp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/huaBagColor"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/board_play_bar_contain"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize" >
+        </LinearLayout>
+    </LinearLayout>
+</layout>

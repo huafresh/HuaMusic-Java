@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="?attr/huaBagColor">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_introduce"
+                android:textSize="@dimen/text_size_middle"
+                android:textColor="?attr/huaTextColor"
+                android:layout_marginTop="@dimen/home_padding"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_padding"
+                app:cardBackgroundColor="?attr/huaWhiteAndThemeBlack">
+                <TextView
+                    android:id="@+id/home_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_description"
+                    android:textColor="?attr/huaTextColor2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_contract"
+                android:textSize="@dimen/text_size_middle"
+                android:textColor="?attr/huaTextColor"
+                android:layout_marginTop="@dimen/home_padding"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_padding"
+                app:cardBackgroundColor="?attr/huaWhiteAndThemeBlack">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_email"
+                    android:textColor="?attr/huaTextColor2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_library"
+                android:textSize="@dimen/text_size_middle"
+                android:textColor="?attr/huaTextColor"
+                android:layout_marginTop="@dimen/home_padding"/>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_padding"
+                app:cardBackgroundColor="?attr/huaWhiteAndThemeBlack">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_lib_content"
+                    android:textColor="?attr/huaTextColor2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</layout>

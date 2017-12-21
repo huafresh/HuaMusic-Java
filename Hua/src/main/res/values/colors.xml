@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--主题颜色-日间-->
+    <color name="colorTheme">#ffce3d3a</color>
+    <!--主题颜色-夜间-->
+    <color name="colorThemeNight">#212121</color>
+
+    <!--淡红-->
+    <color name="colorTheme2">#66ce3d3a</color>
+
+    <!--纯白色-->
+    <color name="colorWhite">#ffffffff</color>
+    <!--纯黑色-->
+    <color name="colorBlack">#ff000000</color>
+
+    <!--页面背景的颜色-日间-->
+    <color name="colorPageBg">#f2f4f5</color>
+    <!--页面背景的颜色-夜间-->
+    <color name="colorPageBgNight">#ff161719</color>
+    <!--稍暗的背景-日间-->
+    <color name="colorPageBg2">#ffe6e8e9</color>
+    <!--稍暗的背景-夜间-->
+    <color name="colorPageBgNight2">#ff212121</color>
+
+    <!--正文文字颜色-日间-->
+    <color name="colorContent">#ff333333</color>
+    <!--比正文颜色稍暗-日间-->
+    <color name="colorContent2">#888</color>
+    <!--正文文字颜色-夜间-->
+    <color name="colorContentNight">#99e6e8e9</color>
+    <!--比正文颜色稍暗-夜间-->
+    <color name="colorContentNight2">#44e6e8e9</color>
+
+    <!--透明色-->
+    <color name="colorTransparent">#00000000</color>
+    <!--半透明-->
+    <color name="colorBanTransparent">#11000000</color>
+
+    <!--分割线背景-日间-->
+    <color name="colorDivider">#e3e3e3</color>
+    <!--分割线背景-夜间-->
+    <color name="colorDividerNight">#12aaaaaa</color>
+
+    <!--白色背景item按下的背景-->
+    <color name="itemPressWhite">#d9d9d9</color>
+    <!--红色背景item按下的背景-->
+    <color name="itemPressRed">#ffce3c3b</color>
+    <!--黑色背景item按下的背景-->
+    <color name="itemPressBlack">#44e6e8e9</color>
+    <!--歌单标题-->
+    <color name="songMenuTitle">#d9d9d9</color>
+
+    <!--进度条进度颜色-->
+    <color name="second_progress">#00BFFF</color>
+
+    <!--以下是波尼音乐拷过来的，后续酌情删掉-->
+    <color name="bottom_bar_bac">#ffffff</color>
+    <color name="bac_red">#ff0033</color>
+    <color name="top_bar_text_select">#ffffff</color>
+    <color name="top_bar_text_no_select">#cccccc</color>
+
+    <color name="seek_bar_bac">#666666</color>
+
+    <color name="music_list_title_color">#121212</color>
+    <color name="home_top_online_text">#eeeeee</color>
+    <color name="music_list_author_color">#999999</color>
+
+    <color name="play_activity_bac_color">#888888</color>
+
+    <color name="lrc_current_color">#ffff00</color>
+    <color name="lrc_none_color">#f9f9f9</color>
+
+    <color name="divider_line_color">#d3d3d3</color>
+
+    <color name="more_press_color">#dddddd</color>
+
+    <color name="setting_open">#215461</color>
+
+</resources>

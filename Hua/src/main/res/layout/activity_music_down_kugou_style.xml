@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/no_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/music_no_down"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="?attr/huaTextColor2"
+            android:gravity="center_horizontal"
+            android:paddingTop="100dp"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:id="@+id/down_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/include_song_menu_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/song_menu_title_height" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/header_copy_top"
+                    layout="@layout/include_song_menu_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/song_menu_title_height"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ListView
+                        android:id="@+id/down_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:divider="?attr/huaBagColor"/>
+
+                    <include
+                        android:id="@+id/header_copy_bottom"
+                        layout="@layout/include_song_menu_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/song_menu_title_height"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/down_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:actionBarSize"
+                        android:orientation="vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

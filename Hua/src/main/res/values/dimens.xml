@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--图片按钮的宽度-->
+    <dimen name="image_button_width">50dp</dimen>
+    <!--头像图片的宽高-->
+    <dimen name="header_image_size">70dp</dimen>
+    <dimen name="header_image_bag_height">200dp</dimen>
+    <!--字体大小-->
+    <dimen name="text_size_big">25sp</dimen>
+    <dimen name="text_size_big2">22sp</dimen>
+    <dimen name="text_size_middle">16sp</dimen>
+    <dimen name="text_size_middle2">15sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_small2">11sp</dimen>
+    <dimen name="text_size_small3">13sp</dimen>
+    <dimen name="text_size_small4">14sp</dimen>
+    <dimen name="online_preview_title_text_size">15sp</dimen>
+    <!--listView的高度-->
+    <dimen name="list_view_height">55dp</dimen>
+    <!--新闻图片宽高-->
+    <dimen name="new_width">120dp</dimen>
+    <dimen name="new_height">70dp</dimen>
+    <!--歌单-->
+    <dimen name="song_menu_title_height">28dp</dimen>
+    <dimen name="song_menu_height">65dp</dimen>
+    <!--文字间的间隔-->
+    <dimen name="text_text_distance">10dp</dimen>
+    <!--歌词的高度和大小-->
+    <dimen name="lrc_text_size">16dp</dimen>
+    <dimen name="lrc_height">20dp</dimen>
+    <!--封面padding-->
+    <dimen name="cover_padding">7dp</dimen>
+    <!--设置界面-->
+    <dimen name="circle_half">9dp</dimen>
+    <dimen name="circle">18dp</dimen>
+    <dimen name="select_bac_width">30dp</dimen>
+    <dimen name="circle_move_width">12dp</dimen>
+    <!--设置定时停止播放界面-->
+    <dimen name="timer_padding">20dp</dimen>
+    <!--项目主页每项的padding-->
+    <dimen name="home_padding">15dp</dimen>
+
+
+    <!--复制自波尼音乐-->
+    <dimen name="online_preview_image_height">80dp</dimen>
+    <dimen name="online_preview_text_height">3dp</dimen>
+    <dimen name="online_preview_margin_height">11dp</dimen>
+
+    <dimen name="bill_board_list_text_size">13dp</dimen>
+    <dimen name="bill_board_list_header_height">150dp</dimen>
+    <dimen name="bill_board_top_bar_height">60dp</dimen>
+
+</resources>

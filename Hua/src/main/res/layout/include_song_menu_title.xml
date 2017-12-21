@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/song_menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/song_menu_title_height"
+        android:orientation="horizontal"
+        android:background="?attr/huaBlackAndThemeBlack"
+        android:clickable="true">
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_down"
+            android:layout_marginLeft="11dp"/>
+        <LinearLayout
+            android:id="@+id/menu_item_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/song_menu_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/song_menu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/music_song_menu"
+                    android:textSize="@dimen/text_size_middle"
+                    android:textColor="?attr/huaTextColor2"/>
+                <TextView
+                    android:id="@+id/song_menu_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/music_sum_default"
+                    android:textSize="@dimen/text_size_middle"
+                    android:textColor="?attr/huaTextColor2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/song_menu_title_more"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

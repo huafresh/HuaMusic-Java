@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/down_tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="?attr/huaBagColor2"
+            app:tabIndicatorColor="@color/colorTheme"
+            app:tabSelectedTextColor="?attr/huaRedAndWhite"
+            app:tabTextColor="?attr/huaBlackAndBlack2" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/down_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?attr/huaBagColor"/>
+
+        <LinearLayout
+            android:id="@+id/down_playBar_contain"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</layout>

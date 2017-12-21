@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="billBoard"
+            type="com.example.hua.huachuang.bean.music.BillBoard"/>
+        <variable
+            name="title"
+            type="String"/>
+        <variable
+            name="isHaveTitle"
+            type="boolean"/>
+    </data>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/preview_title_contain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/online_preview_margin_height"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="@dimen/online_preview_margin_height"
+            android:clickable="false"
+            android:visibility="@{isHaveTitle ? View.VISIBLE : View.GONE}">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_online_music_list_profile_headline"/>
+            <TextView
+                android:id="@+id/preview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@{title}"
+                android:textSize="@dimen/online_preview_title_text_size"
+                android:textColor="?attr/huaTextColor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/preview_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/online_preview_margin_height"
+            android:clickable="true"
+            android:background="?attr/huaItemPress"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <ImageView
+                android:id="@+id/iv_online_preview_image"
+                android:layout_width="@dimen/online_preview_image_height"
+                android:layout_height="@dimen/online_preview_image_height"
+                android:src="@drawable/default_cover"
+                android:scaleType="fitXY"
+                app:previewUrl="@{billBoard.billboard.pic_s260}" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/online_preview_image_height"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="25dp">
+                    <TextView
+                        android:id="@+id/preview_song1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_small2"
+                        android:text='@{"1."+billBoard.song_list.get(0).getTitle()+" - "+billBoard.song_list.get(0).getAuthor()}'
+                        android:textColor="?attr/huaTextColor"/>
+                    <TextView
+                        android:id="@+id/preview_song2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_small2"
+                        android:text='@{"2."+billBoard.song_list.get(1).getTitle()+" - "+billBoard.song_list.get(1).getAuthor()}'
+                        android:layout_marginTop="@dimen/online_preview_text_height"
+                        android:textColor="?attr/huaTextColor"/>
+                    <TextView
+                        android:id="@+id/preview_song3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_small2"
+                        android:text='@{"3."+billBoard.song_list.get(2).getTitle()+" - "+billBoard.song_list.get(2).getAuthor()}'
+                        android:layout_marginTop="@dimen/online_preview_text_height"
+                        android:textColor="?attr/huaTextColor"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="90dp"
+                    android:background="?attr/huaColorDivider"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

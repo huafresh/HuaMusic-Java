@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<android.support.v4.widget.DrawerLayout-->
+        <!--android:id="@+id/draw_layout"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:context="com.example.hua.huachuang.MainActivity">-->
+
+        <!--<include-->
+            <!--android:id="@+id/main_include"-->
+            <!--layout="@layout/app_main"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/fl_slide_menu"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="left" >-->
+            <!--<fragment-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:name="com.example.hua.huachuang.fragment.FragmentSlide"/>-->
+        <!--</LinearLayout>-->
+        <!---->
+    <!--</android.support.v4.widget.DrawerLayout>-->
+
+
+    <com.example.hua.huachuang.custom.SlideMenuLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/slide_menu_hua"
+        android:background="?attr/huaBagColor">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <!--菜单布局-->
+            <LinearLayout
+                android:id="@+id/fl_slide_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left" >
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:name="com.example.hua.huachuang.fragment.FragmentSlide"/>
+            </LinearLayout>
+        <!--内容布局-->
+            <include
+                android:id="@+id/main_include"
+                layout="@layout/app_main"/>
+
+        </LinearLayout>
+    </com.example.hua.huachuang.custom.SlideMenuLayout>
+
+</layout>

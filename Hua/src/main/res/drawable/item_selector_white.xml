@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/itemPressWhite"/>
+        </shape>
+    </item>
+    <!--没有按下时不给任何颜色，此时就会随背景色，所以这里注释可以让-->
+    <!--底部播放布局被点击时背景变暗-->
+    <!--<item android:state_pressed="false">-->
+        <!--<shape>-->
+            <!--<solid android:color="@color/colorWhite"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+    <item android:state_selected="true">
+        <shape>
+            <solid android:color="@color/itemPressWhite"/>
+        </shape>
+    </item>
+</selector>

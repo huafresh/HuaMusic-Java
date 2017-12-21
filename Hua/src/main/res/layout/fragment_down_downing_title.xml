@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:id="@+id/title_start_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/item_selector_white">
+                <ImageView
+                    android:id="@+id/down_state_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_start"/>
+                <TextView
+                    android:id="@+id/down_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/down_start_all"
+                    android:textColor="?attr/huaTextColor"
+                    android:layout_marginLeft="3dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/title_clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:background="@drawable/item_selector_white">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_clear"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/down_clear"
+                    android:textColor="?attr/huaTextColor"
+                    android:layout_marginLeft="3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@color/colorDivider"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDivider"
+            android:layout_gravity="bottom"/>
+    </FrameLayout>
+</layout>
