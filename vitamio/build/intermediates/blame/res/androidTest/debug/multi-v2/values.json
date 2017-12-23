@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "F:\\AndroidStudioProjects\\HuaChuang\\vitamio\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "F:\\AndroidStudioProjects\\HuaChuang\\vitamio\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,11,12,13,14,15,16,17,18,19,21,22,23,24,34",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,110,173,221,270,319,373,525,618,686,746,810,911,982,1095,1182,1311,1396,1469,1537,2184",
+                        "endLines": "2,3,4,5,6,7,10,11,12,13,14,15,16,17,18,20,21,22,23,33,38",
+                        "endColumns": "54,62,47,48,48,53,13,92,67,59,63,100,70,112,86,13,84,72,67,12,12",
+                        "endOffsets": "105,168,216,265,314,368,520,613,681,741,805,906,977,1090,1177,1306,1391,1464,1532,2179,2389"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,3 +1,4 @@
+io.vov.vitamio
 int color mediacontroller_bg 0x7f060001
 int color mediacontroller_bg_pressed 0x7f060002
 int color transparent 0x7f060003
